@@ -1,0 +1,9 @@
+[
+  {
+    "chunkId":"start",
+    "setting": "The sun was already setting that evening. Kaleb was going to meet Tom to collect the mysterious gem he told about. Kaleb sees Tom resting in the shade under a large oak in the park. Tom is nervously kicking a rock.",
+    "dialogue": [
+      {"Tom", "Hello.", "I have been waiting for you for hours!", "We've got to leave here immediately.","I am afraid an old friend of mine will spot me here."}, {"Kaleb", "Okay.", "Where do you want to go?", "Because I don't know anywhere safe and quiet in this town.", "And going to your appartment on the first day of meeting you is too fishy..."}
+    ]
+  }
+]
