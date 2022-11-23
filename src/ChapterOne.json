@@ -1,9 +1,58 @@
 [
   {
-    "chunkId":"start",
+    "chunkId":"0",
     "setting": "The sun was already setting that evening. Kaleb was going to meet Tom to collect the mysterious gem he told about. Kaleb sees Tom resting in the shade under a large oak in the park. Tom is nervously kicking a rock.",
     "dialogue": [
-      {"Tom", "Hello.", "I have been waiting for you for hours!", "We've got to leave here immediately.","I am afraid an old friend of mine will spot me here."}, {"Kaleb", "Okay.", "Where do you want to go?", "Because I don't know anywhere safe and quiet in this town.", "And going to your appartment on the first day of meeting you is too fishy..."}
+      {
+        "name": "Tom",
+        "text": ["Hello.", "I have been waiting for you for hours!", "We've got to leave here immediately.","I am afraid an old friend of mine will spot me here."]
+      },
+      {
+        "name": "Kaleb",
+        "text": ["Where do you want to go?", "Because I don't know anywhere safe and quiet in this town.", "And going to your apartment on the first day of meeting you is too fishy..."]
+      },
+      {
+        "name": "Tom",
+        "text": ["Maybe your place, [name]?"]
+      }
+    ],
+    "responses": [
+      {
+        "res": "It's messy and too small.",
+        "nextChunk": "2",
+        "emo": "insecure",
+        "points": 1
+      },
+      {
+        "res": "I wouldn't mind.",
+        "nextChunk": "1"
+      },
+      {
+        "res": "Definitely my house.",
+        "nextChunk": "1",
+        "emo": "Arrogant",
+        "points": 3
+      }
     ]
+  },
+  {
+    "chunkId": "1",
+    "dialogue": [
+      {
+        "name": "Tom",
+        "text": ["Okay then, let's stop wasting time."]
+      }
+    ],
+    "end": true
+  },
+  {
+    "chunkId": "2",
+    "dialogue": [
+      {
+        "name": "Tom",
+        "text": ["Oh, stop with that bullshit. Let's just go to my place then."]
+      }
+    ],
+    "end": true
   }
 ]
